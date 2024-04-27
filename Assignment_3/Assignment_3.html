@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1><b><u>Registration Form.</u></b></h1>
+    <table style="width: 500px;">
+        <tr>
+            <td colspan="3">
+                <img src="sunbeam.png" style="height: 400px; width: 400px;"/>
+            </td>
+        <td><table style="width: 400px;"></td>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input 
+                    type="text"
+                    name="myname"
+                    id="txtname"
+                    required
+                    placeholder="Enter Your Name"
+                    />
+                </td>
+                    <td>
+                        <div id="errorDiv1" style="color: red; width: 200px"></div>
+                    </td>
+            </tr>
+            <tr>
+                <td>BirthDate</td>
+                <td>
+                    <input type="date" />
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input 
+                    type="email"
+                    email="myemail"
+                    id="textemail"
+                    required
+                    placeholder="abc@gmail.com"
+                    />
+                </td> 
+                <td><div id="errorDiv2" style="color: blue; width: 200px"></div></td>   
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>
+                    <input 
+                    type="password"
+                    password="mypassword"
+                    required
+                    placeholder="*****"
+                    />
+                </td>    
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td colspan="2"> <label for="State"></label>
+                   <select name="myState" id="State" >
+                    <option value="1">Maharashtra</option>
+                    <option value="2">Gujrat</option>
+                    <option value="3">Karnataka</option>
+                </select>
+                    <label for="District"></label>
+                    <select name="myDistrict" id="district">
+                    <option value="1">Satara</option>
+                    <option value="2">Pune</option>
+                    <option value="3">Bengaluru</option>
+                    </select>
+                    <label for="City"></label> 
+                    <select name="myCity" id="City">
+                    <option value="1">karad</option>
+                    <option value="3">Mulshi</option>
+                    <option value="2">Surat</option>
+                   </select>  
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                <input type="radio" name="Gender" value="1" />Male
+                <input type="radio" name="Gender" value="2" />Female
+                <input type="radio" name="Gender" value="3" />Other
+               </td>
+            </tr>
+            <tr>
+                <td>Upload Photo</td>
+                <td>
+                   <input type="file" >
+                </td>
+            </tr>
+            <tr>
+                <td>Select Your course</td>
+                <td>
+                    <label for="Course"></label>
+                    <select name="Course" id="course">
+                        <option value="1">DAC</option>
+                        <option value="2">DBDA</option>
+                        <option value="3">DMC</option>
+                   </select>
+                </td>
+            </tr>
+            <center>
+            <tr>
+                <td> 
+                <input type="button"
+                value="Submit"
+                onclick="validate()"
+                 />
+                </td>
+                <td>
+                    <input type="button"
+                    value="Reset" />
+                </td>
+            </tr>
+            </center>
+        </table>
+
+            <script src="validations.js" ></script>
+            <script>
+                function validate()
+                {
+                    validateEmpty("txtname","errorDiv1","Name is required");
+                    validateEmpty("textemail","errorDiv2","Email is required");
+                }
+            </script>
+       
+    </center>
+</body>
+</html>

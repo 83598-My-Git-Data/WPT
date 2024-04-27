@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        #mydiv img {
+            transition: transform 0.2s ease; 
+        }
+    </style>
+</head>
+<body>
+
+  
+    <div id="mydiv" style="width: 100px; height: 100px; position: absolute; top: 0px; left: 0px;">
+        <img src="car.jpeg" style="height: 100px; width: 200px;" id="catImg">
+    </div>
+    </br></br>
+    
+
+    <div style="background-color: black; width: 400px; height: 10px; position: absolute; top: 85px; left: 0px;"></div>
+    </br></br></br></br></br>
+
+    <input type="button" value="Start" onclick="startCount()">
+    <input type="button" value="Stop" onclick="stopCount()">
+    <br>
+
+    <span>X-axis</span>
+    <div id="xaxis">
+          <input type="text">
+
+    </div>
+    <br>
+    <span>Y-axis</span>
+    <div id="yaxis">
+        
+          <input type="text">
+    </div>
+
+  
+    <script>
+        var count=0;
+        var refToMyDiv=document.getElementById("mydiv");
+        var refToxaxis=document.getElementById("xaxis");
+        var refToyaxis=document.getElementById("yaxis");
+        var arrQueno= new Array();
+        var count2=0;
+
+
+        function startCount(){
+            
+            var queNo=window.setInterval(Start,100);
+            console.log("q created with no: "+ queNo);
+            arrQueno.push(queNo);
+            
+
+        }
+        function stopCount(){
+
+            var queNo= arrQueno.pop();
+            window.clearInterval(queNo);
+            console.log("q destoryed with no: "+ queNo);
+        }
+
+        function Start()
+        {
+            count=count+1;
+            
+            if(count <361)
+            {
+                refToxaxis.innerText=count;
+            refToMyDiv.style.marginLeft=count+"px";
+            //catImg.style.transform = "rotate(" + count + "deg)";
+
+ 
+            }else if(count2< 400){
+                
+                count2 = count2+1
+                refToyaxis.innerText=count2;
+                catImg.style.transform= "rotate(" + count + "deg)";
+
+            refToMyDiv.style.marginTop=count2+"px";
+            }
+            else
+            {
+                refToMyDiv.innerHTML = "please take insurance"
+            }
+                   
+        }
+
+    </script>
+
+</body>
+</html>
