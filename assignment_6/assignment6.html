@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDB</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    .product-card {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    .product-card img {
+      max-width: 100%;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">MDB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Cart</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <h4>Mens wear</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Data</a></li>
+          <li><a href="#">Related Items</a></li>
+        </ul>
+        <h4>Brands</h4>
+        <ul>
+          <li>Mercedes</li>
+          <li>Toyota</li>
+          <li>Mitsubishi</li>
+          <li>Nissan</li>
+          <li>Honda</li>
+          <li>Suzuki</li>
+        </ul>
+        <h4>Price</h4>
+        <form>
+          <div class="form-group">
+            <label for="minPrice">Min</label>
+            <input type="text" class="form-control" id="minPrice">
+          </div>
+          <div class="form-group">
+            <label for="maxPrice">Max</label>
+            <input type="text" class="form-control" id="maxPrice">
+          </div>
+          <button type="submit" class="btn btn-primary">Apply</button>
+        </form>
+        <h4>Size</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="sizeXS">
+          <label class="form-check-label" for="sizeXS">
+            XS
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="sizeSM">
+          <label class="form-check-label" for="sizeSM">
+            SM
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="sizeLG">
+          <label class="form-check-label" for="sizeLG">
+            LG
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="sizeXXL">
+          <label class="form-check-label" for="sizeXXL">
+            XXL
+          </label>
+        </div>
+        <h4>Ratings</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="rating1">
+          <label class="form-check-label" for="rating1">
+            ★★★★★
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="rating2">
+          <label class="form-check-label" for="rating2">
+            ★★★★
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="rating3">
+          <label class="form-check-label" for="rating3">
+            ★★★
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="rating4">
+          <label class="form-check-label" for="rating4">
+            ★★
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="rating5">
+          <label class="form-check-label" for="rating5">
+            ★
+          </label>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h2>Men's Wear</h2>
+        <p>32 Items Found</p>
+
+        <div class="product-card">
+          <h3>Rucksack Backpack Jeans</h3>
+          <img src="image1.jpg" alt="Rucksack Backpack Jeans" height="200">
+          <p>4.5 <span>154 orders</span></p>
+          <p>Short description about the product goes here...</p>
+          <p>$34,50</p>
+          <p>Free shipping</p>
+          <button type="button" class="btn btn-primary">BUY THIS</button>
+        </div>
+
+        <div class="product-card">
+          <h3>Men's Denim Jeans Shorts</h3>
+          <img src="image2.jpg" alt="Men's Denim Jeans Shorts" height="200">
+          <p>★★★☆☆ 3 <span> 73 orders</span></p>
+          <p>Short description about the product goes here...</p>
+          <p>$34,50</p>
+          <p>Free shipping</p>
+          <button type="button" class="btn btn-primary">BUY THIS</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Winter Jacket for Men and Women</h3>
+            <img src="image3.jpg" alt="Winter Jacket for Men and Women" height="200">
+            <p>***** 4.5 <span>154 orders</span></p>
+            <p>Short description about the product goes here...</p>
+            <p>$140</p>
+            <p>Free shipping</p>
+            <button type="button" class="btn btn-primary">BUY THIS</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>MDB</p>
+              <p><b>2023 Copyright: MDBootstrap.com</b></p>
+            </div>
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-3">
+                  <p>STORE</p>
+                  <ul>
+                    <li>About us</li>
+                    <li>Find store</li>
+                    <li>Blogs</li>
+
+                    <li>categories</li>
+                    
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <p>INFORMATION</p>
+                  <ul>
+                    <li>Help Center</li>
+                    <li>Money refund</li>
+                    <li>Shipping Info</li>
+                    <li>REfunds</li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <p>SUPPORT</p>
+                  <ul>
+                    <li>My orders</li>
+                    <li>DOcuments</li>
+                    <li>Account Restore</li>
+                    <li>Help</li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <p>NEWSLETTER</p>
+                  <p>Stay in touch with latest updates about our products and offers</p>
+                 
+                  <button type="button" class="btn btn-primary">email</button>
+                  <p><input type="checkbox" name="English" id="English">English</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
